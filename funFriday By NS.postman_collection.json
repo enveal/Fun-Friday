@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "70cd5760-88cc-47da-afef-7db1a2462cee",
+		"name": "funFriday By NS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19556390"
+	},
+	"item": [
+		{
+			"name": "Employee-  add multiple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"entries\": [\n    {\n    \"name\": \"Naveen\",\n    \"gender\": \"male\"\n},\n{\n    \"name\": \"Rishi\",\n    \"gender\": \"male\"\n}\n]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/addAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"addAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee-  GetAll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"entries\": [\n    {\n    \"name\": \"Naveen\",\n    \"gender\": \"male\"\n},\n{\n    \"name\": \"Rishi\",\n    \"gender\": \"male\"\n}\n]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/app/addAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"addAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generic- Post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Naval\",\n    \"age\": 25\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generic- update Data",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Naval Sood\",\n    \"age\": 25\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/62adf816da473c8e84c95e4f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"62adf816da473c8e84c95e4f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generic- Delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Naval\",\n    \"age\": 25\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/delete/62adf816da473c8e84c95e4f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete",
+						"62adf816da473c8e84c95e4f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generic- get data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Naval\",\n    \"age\": 25\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getOne/62adf816da473c8e84c95e4f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getOne",
+						"62adf816da473c8e84c95e4f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game - getEmployees",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Game - create-team",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"teamArray\": [\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        7,\n        8,\n        9,\n        10\n    ],\n    \"teamSize\": 2,\n    \"numberOfTeams: 5\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/game/create-team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"game",
+						"create-team"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
